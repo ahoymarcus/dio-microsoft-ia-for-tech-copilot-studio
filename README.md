@@ -61,7 +61,7 @@ Assim, devendo caber às equipes de responsáveis realizar todo o design da estr
 
 ## Auditando Atividades do Copilot Studio
 
-Observe que o Copilot Studio faz o registro e a administração das suas atividades tanto na figura de seus administradores, quanto dos criadores e dos desenvolvedores, quanto dos usuários, fazendo a guarda, então, do acesso desses logs por meio da **API de gerenciamento do Office 365**, bem como seguindo de perto as diretivas constantes na plataforma da Microsoft através do [Portal de Conformidade do Microsoft Purview][https://login.microsoftonline.com/common/oauth2/authorize?client_id=80ccca67-54bd-44ab-8625-4b79c4dc7775&response_type=code%20id_token&scope=openid%20profile&state=OpenIdConnect.AuthenticationProperties%3DUjL40GITTnfXsmu-i-E8xE4VpifeDs0IoV9JmNwhdurqjZqFy4HkezvKyZCjr_h1-BpuYJAPjFLTFqEx4ELfb04w1J3QhUrlrROC_rcFtiYaZtI4Bl5XyTZ7RBGJ7IlsnfepPhi3HbZQwS946Hkf4A&response_mode=form_post&nonce=638794660608735510.NjNiZTZjMTUtOTUwMC00N2MwLTk1NWYtMDAxNWY2ZjU4MDNlZmJmMWUxMGUtMTBlMi00Y2JjLWIwMGQtYzRhOTFmMzgzZWQx&client-request-id=2d059389-1cff-4c53-b4c0-e02d030aaf7f&redirect_uri=https%3A%2F%2Fpurview.microsoft.com%2F&claims=%7B%22id_token%22%3A%7B%22xms_cc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&x-client-SKU=ID_NET472&x-client-ver=8.3.0.0]
+Observe que o Copilot Studio faz o registro e a administração das suas atividades tanto na figura de seus administradores, quanto dos criadores e dos desenvolvedores, quanto dos usuários, fazendo a guarda, então, do acesso desses logs por meio da **API de gerenciamento do Office 365**, bem como seguindo de perto as diretivas constantes na plataforma da Microsoft através do [Portal de Conformidade do Microsoft Purview](https://login.microsoftonline.com/common/oauth2/authorize?client_id=80ccca67-54bd-44ab-8625-4b79c4dc7775&response_type=code%20id_token&scope=openid%20profile&state=OpenIdConnect.AuthenticationProperties%3DUjL40GITTnfXsmu-i-E8xE4VpifeDs0IoV9JmNwhdurqjZqFy4HkezvKyZCjr_h1-BpuYJAPjFLTFqEx4ELfb04w1J3QhUrlrROC_rcFtiYaZtI4Bl5XyTZ7RBGJ7IlsnfepPhi3HbZQwS946Hkf4A&response_mode=form_post&nonce=638794660608735510.NjNiZTZjMTUtOTUwMC00N2MwLTk1NWYtMDAxNWY2ZjU4MDNlZmJmMWUxMGUtMTBlMi00Y2JjLWIwMGQtYzRhOTFmMzgzZWQx&client-request-id=2d059389-1cff-4c53-b4c0-e02d030aaf7f&redirect_uri=https%3A%2F%2Fpurview.microsoft.com%2F&claims=%7B%22id_token%22%3A%7B%22xms_cc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&x-client-SKU=ID_NET472&x-client-ver=8.3.0.0)
 
 
 O acesso aos logs pode se dar na área **Soluções** do portal de conformidade do Microsoft Purview, quando se acessa na forma de administrador, sendo que as **atividades** podem ser filtradas e mapeadas por **tipos** e **categorias de eventos**.
@@ -71,27 +71,27 @@ Alguns exemplos de eventos de auditoria da ferramenta são:
 
 |  Category   |  Rótulo do evento 	| Descrição do evento |
 | ----------- | ------------------- | ------------------- |
-| Agentes 	| BotDeleteCleanup 	| A limpeza de dependências depois que um agente for excluído no Copilot Studio | 
-| Agentes 	| BotNameUpdate 	| Atualização do nome do agente no Copilot Studio |
-| Agentes 	| BotCreate 	| A criação de um novo agente no Copilot Studio |
-| Agentes 	| BotDelete 	| A exclusão de um agente no Copilot Studio |
-| Agentes 	| BotAuthUpdate 	| Atualização das configurações de autenticação de um agente no Copilot Studio |
-| Agentes 	| BotIconUpdate 	| Atualização do ícone de agente no Copilot Studio |
-| Agentes 	| BotPublish 	| Publicação de um agente no Copilot Studio |
-| Agentes 	| BotShare 	| Compartilhamento de um agente com outros usuários no Copilot Studio |
-| Agentes 	| BotAppInsightsUpdate 	| Atualização da configuração de registro em log do App Insights de um agente no Copilot Studio |
-| Componente do agente 	| BotComponentCreate 	| A criação de um componente (como um tópico ou uma habilidade) para um agente no Copilot Studio |
-| Componente do agente 	| BotComponentUpdate 	| A atualização de um componente (como um tópico ou uma habilidade) para um agente no Copilot Studio |
-| Componente do agente 	| BotComponentDelete 	| A exclusão de um componente (como um tópico ou uma habilidade) para um agente no Copilot Studio |
-| Coleção de componentes do agente 	| BotComponentCollectionCreate 	| A criação de uma coleção de componentes para um agente no Copilot Studio |
-| Coleção de componentes do agente 	| BotComponentCollectionDelete 	| A exclusão de uma coleção de componentes para um agente no Copilot Studio |
-| Coleção de componentes do agente 	| BotComponentCollectionUpdate 	| A atualização de uma coleção de componentes para um agente no Copilot Studio |
-| Plugin de IA 	| AIPluginOperationCreate 	| Criação de um plug-in de IA para um agente no Copilot Studio |
-| Plugin de IA 	| AIPluginOperationUpdate 	| Atualização de um plug-in de IA para um agente no Copilot Studio |
-| Plugin de IA 	| AIPluginOperationDelete 	| Remoção de um plug-in de IA para um agente no Copilot Studio |
-| Variável de ambiente 	| EnvironmentVariableCreate 	| Criação de uma variável de ambiente para um agente no Copilot Studio |
-| Variável de ambiente 	| EnvironmentVariableUpdate 	| Atualização de uma variável de ambiente para um agente no Copilot Studio |
-| Variável de ambiente 	| EnvironmentVariableDelete 	| Exclusão de uma variável de ambiente para um agente no Copilot Studio |
+| Agentes 	| **BotDeleteCleanup** 	| A limpeza de dependências depois que um agente for excluído no Copilot Studio | 
+| Agentes 	| **BotNameUpdate**	| Atualização do nome do agente no Copilot Studio |
+| Agentes 	| **BotCreate** 	| A criação de um novo agente no Copilot Studio |
+| Agentes 	| **BotDelete** 	| A exclusão de um agente no Copilot Studio |
+| Agentes 	| **BotAuthUpdate** 	| Atualização das configurações de autenticação de um agente no Copilot Studio |
+| Agentes 	| **BotIconUpdate**	| Atualização do ícone de agente no Copilot Studio |
+| Agentes 	| **BotPublish** 	| Publicação de um agente no Copilot Studio |
+| Agentes 	| **BotShare** 	| Compartilhamento de um agente com outros usuários no Copilot Studio |
+| Agentes 	| **BotAppInsightsUpdate** 	| Atualização da configuração de registro em log do App Insights de um agente no Copilot Studio |
+| Componente do agente 	| **BotComponentCreate** 	| A criação de um componente (como um tópico ou uma habilidade) para um agente no Copilot Studio |
+| Componente do agente 	| **BotComponentUpdate** 	| A atualização de um componente (como um tópico ou uma habilidade) para um agente no Copilot Studio |
+| Componente do agente 	| **BotComponentDelete** 	| A exclusão de um componente (como um tópico ou uma habilidade) para um agente no Copilot Studio |
+| Coleção de componentes do agente 	| **BotComponentCollectionCreate** 	| A criação de uma coleção de componentes para um agente no Copilot Studio |
+| Coleção de componentes do agente 	| **BotComponentCollectionDelete** 	| A exclusão de uma coleção de componentes para um agente no Copilot Studio |
+| Coleção de componentes do agente 	| **BotComponentCollectionUpdate** 	| A atualização de uma coleção de componentes para um agente no Copilot Studio |
+| Plugin de IA 	| **AIPluginOperationCreate** 	| Criação de um plug-in de IA para um agente no Copilot Studio |
+| Plugin de IA 	| **AIPluginOperationUpdate** 	| Atualização de um plug-in de IA para um agente no Copilot Studio |
+| Plugin de IA 	| **AIPluginOperationDelete**	| Remoção de um plug-in de IA para um agente no Copilot Studio |
+| Variável de ambiente 	| **EnvironmentVariableCreate**	| Criação de uma variável de ambiente para um agente no Copilot Studio |
+| Variável de ambiente 	| **EnvironmentVariableUpdate**	| Atualização de uma variável de ambiente para um agente no Copilot Studio |
+| Variável de ambiente 	| **EnvironmentVariableDelete**	| Exclusão de uma variável de ambiente para um agente no Copilot Studio |
 
 
 <br>
